@@ -19,6 +19,7 @@ docker run --rm \
    kimtaek/eks
 ```
 
+##### [optional] PLUGIN_ACCOUNT (default: `deployer`)
 ##### [optional] PLUGIN_DEBUG (default: `false`)
 ```bash
 echo env

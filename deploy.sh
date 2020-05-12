@@ -5,6 +5,10 @@ if [ ! -z ${PLUGIN_DEBUG} ]; then
   kubectl version
 fi
 
+if [[ "x$PLUGIN_ACCOUNT" == "x" ]]; then
+  PLUGIN_ACCOUNT="deployer"
+fi
+
 echo ${PLUGIN_TOKEN} | base64 -d > token
 echo ${PLUGIN_CERT} | base64 -d > ca
 
